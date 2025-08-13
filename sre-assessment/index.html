@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SRE Practice Assessment</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>SRE Practice Assessment</h1>
+      <p class="subtitle">Rate each question on a scale of 0–10 and provide additional context.</p>
+    </header>
+
+    <main class="container">
+      <section class="controls">
+        <div class="totals">
+          <strong>Total score:</strong>
+          <span id="totalScore" aria-live="polite">0</span>
+          <span class="total-out-of">/ 100</span>
+        </div>
+        <div class="buttons">
+          <button id="exportBtn" type="button">Export JSON</button>
+          <button id="printBtn" type="button">Print</button>
+          <button id="resetBtn" type="button" class="secondary">Reset</button>
+        </div>
+      </section>
+
+      <form id="assessmentForm" novalidate>
+        <div id="questionsContainer" class="questions"></div>
+      </form>
+    </main>
+
+    <footer class="app-footer">
+      <small>Scores are out of 10 per question. Your progress is auto-saved in this browser.</small>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
