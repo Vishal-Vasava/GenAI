@@ -1,0 +1,19 @@
+{
+  "name": "sre-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple SRE practice assessment web app (static)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "compression": "^1.7.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
